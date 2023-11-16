@@ -93,6 +93,7 @@ body{
     gap: 10px;
     border: none;
     border-radius: 8px;
+    font-weight: bold;
 }
 
 .btn:hover{
