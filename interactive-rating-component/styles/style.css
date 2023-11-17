@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100dvw;
+    height: 100dvh;
+    background-color: #131518;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 412px;
+    height: 416px;
+    border-radius: 30px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Overpass', sans-serif;
+}
+
+.icon-container{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #262E38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+h1{
+    font-size: 28px;
+    color: #fff;
+}
+
+.text-container p{
+    font-size: 15px;
+    color: #969FAD;
+}
+
+.rate-btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rate-btn{
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background-color: #262E38;
+    color: #7C8798;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.selected{
+    background-color: #7C8798;
+    color: #fff;
+}
+
+.rate-btn:hover{
+    background-color: #FC7614;
+    color: #fff;
+}
+
+.btn{
+    border-radius: 22.5px;
+    background-color: #FC7614;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #fff;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #FC7614;
+}
+
+.thanks-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.thanks-image{
+    width: 162px;
+    height: 108px;
+}
+
+.feedback{
+    width: fit-content;
+    background-color: #262E38;
+    height: 32px;
+    border-radius: 22.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FC7614;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 4px 20px;
+}
+
+@media screen and (max-width: 430px) {
+    .card{
+        width: 327px;
+        height: 360px;
+        border-radius: 15px;
+        padding: 24px 24px 32px 24px;
+    }
+
+    .icon-container{
+        width: 40px;
+        height: 40px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    .text-container p{
+        font-size: 14px;
+    }
+
+    .rate-btn{
+        width: 42px;
+        height: 42px;
+    }
+
+    .thanks-image{
+        width: 144px;
+        height: 96;
+    }
+
+    .feedback{
+        padding: 5px 12px;
+        font-size: 14px;
+    }
+}
