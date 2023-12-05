@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 920px;
+    height: 500px;
+    border-radius: 8px;
+    display: flex;
+}
+
+.types-container{
+    width: 307px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px;
+}
+
+.sedans{
+    background: #E28625;
+    border-radius: 8px 0 0 8px;
+}
+
+.suvs{
+    background: #006971;
+}
+
+.luxury{
+    background: #004140;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.types-container img{
+    width: 64px;
+    height: 40px;
+}
+
+.types-container h2{
+    color: #F2F2F2;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Big Shoulders Display;
+}
+
+.types-container p{
+    color: #FFF;
+    font-family: Lexend Deca;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 83px;
+}
+
+.types-container button{
+    width: 146px;
+    height: 48px;
+    border-radius: 25px;
+    background: #F2F2F2;
+    border: none;
+    color: #E28625;
+    font-family: Lexend Deca;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.types-container button:hover{
+    background-color: transparent;
+    border: 2px solid #FFF;
+    color: #fff;
+}
+
+@media screen and (max-width: 430px) {
+    body{
+        padding: 88px 24px;
+        height: auto;
+    }
+
+    .card{
+        width: 327px;
+        height: 1326px;
+        flex-direction: column;
+    }
+
+    .types-container{
+        width: 327px;
+        height: 442px;
+    }
+
+    .sedans{
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .luxury{
+        border-radius: 0 0 8px 8px;
+    }
+    
+    .types-container p{
+        margin-bottom: 0;
+    }
+}
