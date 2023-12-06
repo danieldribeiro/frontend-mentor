@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100dvw;
+    height: 100dvh;
+    background-color: #e6eff5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+}
+
+.card{
+    width: 635px;
+    height: 475px;
+    background: #FFF;
+    border-radius: 8px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:    'community community'
+                            'subscription why-us';
+    color: #FFF;
+}
+
+.community,
+.subscription,
+.why-us{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.community{
+    grid-area: community;
+    font-weight: 700;
+}
+
+.community h1{
+    color: #2AB3B1;
+    font-size: 24px;
+    letter-spacing: -0.3px;
+}
+
+.community h3{
+    color: #C0DF33;
+    font-size: 18px;
+    letter-spacing: -0.225px;
+}
+
+.community p{
+    color: #9AA7BE;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+}
+
+.subscription{
+    grid-area: subscription;
+    background-color: #26acaa;
+    border-radius: 0 0 0 8px;
+}
+
+.subscription h3{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.225px;
+}
+
+.price{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.price h2{
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.price span{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    opacity: 0.5;
+}
+
+.subscription p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+}
+
+.subscription button{
+    width: 237px;
+    height: 48px;
+    border-radius: 5px;
+    background: #C0DF33;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    cursor: pointer;
+}
+
+.subscription button:hover{
+    background: #A9D62B;
+}
+
+.why-us{
+    grid-area: why-us;
+    background-color: #2AB3B1;
+    border-radius: 0 0 8px 0;
+}
+
+.why-us h3{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.225px;
+}
+
+.why-us ul{
+    margin-top: 18px;
+}
+
+.why-us ul li{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.175px;
+    opacity: 0.75;
+    list-style: none;
+}
+
+@media screen and (max-width: 430px){
+    body{
+        width: 375px;
+        height: 100%;
+        padding: 72px 32px;
+    }
+
+    .card{
+        width: 311px;
+        height: 722px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:    'community'
+                                'subscription' 'why-us';
+    }
+
+    .community,
+    .subscription,
+    .why-us{
+        padding: 28px 24px;
+    }
+
+    .community h1{
+        font-size: 20px;
+        letter-spacing: -0.25px;
+    }
+    
+    .community h3{
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: -0.187px;
+    }
+    
+    .community p{
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: -0.175px;
+    }
+    
+    .subscription{
+        border-radius: 0;
+    }
+    
+    .subscription button{
+        width: 263px;
+        border: none;
+    }
+
+    .why-us{
+        border-radius: 0 0 5px 5px;
+    }
+}
